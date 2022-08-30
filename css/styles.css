@@ -1,0 +1,50 @@
+:root {
+  --linear-color: #f32170, #ffeb07, #2196f3, #ff00eb;
+}
+
+html {
+  font-family: "Montserrat", sans-serif;
+  background: rgb(29, 26, 26);
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+}
+
+section {
+  height: 90vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.container {
+  max-width: 700%;
+  margin: auto;
+  height: 50vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  font-size: 3em;
+  font-weight: 200;
+  color: white;
+}
+.small-container {
+  position: absolute;
+  max-width: 700px;
+  top: 55%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 3em;
+  font-weight: 200;
+  background: linear-gradient(to right, var(--linear-color));
+  -webkit-text-fill-color: transparent;
+  -webkit-background-clip: text;
+}
+.bdsm::before {
+  content: "\00a0 ";
+}
+.bdsm {
+  background: linear-gradient(to right, var(--linear-color));
+  -webkit-text-fill-color: transparent;
+  -webkit-background-clip: text;
+}
